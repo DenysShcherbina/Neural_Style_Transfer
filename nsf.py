@@ -112,7 +112,7 @@ model_outputs = style_outputs + content_outputs
 model = keras.models.Model(inputs=vgg.input, outputs=model_outputs)
 # model.summary()
 
-
+# Start process
 num_iterations = 100
 content_weight = 1e3  
 style_weight = 1e-2  
