@@ -114,8 +114,8 @@ model = keras.models.Model(inputs=vgg.input, outputs=model_outputs)
 
 
 num_iterations = 100
-content_weight = 1e3  #1000
-style_weight = 1e-2   #0.01
+content_weight = 1e3  
+style_weight = 1e-2  
 
 style_features, content_features = get_feature_representations(model)
 gram_style_features = [gram_matrix(style_feature) for style_feature in style_features]
